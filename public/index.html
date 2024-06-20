@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Corporate Website</title>
+</head>
+<body>
+
+    <svg height="100vh" width="100vw" style="position: absolute; top: 0">
+        <filter id="grainy">
+            <feTurbulence type="fractalNoise" baseFrequency="0.5"/>
+            <feComposite operator="in" in2="SourceGraphic" result="monoNoise"/>
+        </filter>
+    </svg>
+    
+    <div id="header">
+        <div id="logo">
+            <div style="width: 13px; height: 13px; position: relative">
+                <div style="width: 13px; height: 13px; left: 0px; top: 0px; position: absolute; background: #101110; border-radius: 50%"></div>
+            </div>
+            <div style="width: 13px; height: 13px; position: relative">
+                <div style="width: 13px; height: 13px; left: 0px; top: 0px; position: absolute; background: #101110; border-radius: 50%"></div>
+            </div>
+        </div>
+        <div id="navbar">
+            <div id="language" class="std-text">EN</div>
+            <div id="contact">
+                <div class="std-text">CONTACT US</div>
+                <img style="width: 10px; position: relative" src="images/contact.svg" />
+            </div>
+            <img id="menu-icon" style="width: 36px; height: 11px; position: relative" src="images/menu.svg" />
+        </div>
+    </div>
+
+    <div id="main">
+        <div style="width: 100vw; height: 100%; overflow: hidden; position: absolute; top: 0; left: 0;">
+            <div style="width: 50vw; height: 80vh; z-index: 2; right: 0px; top: 0px; position: absolute; transform: rotate(45deg); transform-origin: 36% 60%; filter: blur(0px);
+                background: radial-gradient(22% 23% at 36% 60%, rgba(243, 153, 76, 0.70) 0%, rgba(243, 153, 76, 0.30) 50%, rgba(241, 234, 234, 0) 100%)">
+            </div>
+            <div style="width: 50vw; height: 80vh; z-index: 3; right: 0px; top: 0px; position: absolute; transform: rotate(15deg); transform-origin: 50% 50%; filter: blur(30px);
+                background: radial-gradient(28% 26% at 50% 50%, rgba(228, 47, 47, 0.80) 20%, rgba(241, 234, 234, 0) 100%)">
+            </div>
+            <div style="width: 50vw; height: 80vh; z-index: 1; right: 0px; top: 0px; position: absolute; transform: rotate(45deg); transform-origin: 44% 64%; filter: blur(5px);
+                background: radial-gradient(40% 36% at 44% 64%, rgba(243, 153, 76, 0.70) 0%, rgba(241, 234, 234, 0) 100%)">
+            </div>
+        </div>
+        <div id="hero">
+            <div id="hero-banner">
+                <div id="tagline">
+                    <div class="tagline-text">WE CREATE</div>
+                    <div class="tagline-text" style="margin-left: 16.6vw">BEST DIGITAL</div>
+                    <div class="tagline-text" >PRODUCTS.</div>
+                </div>
+            </div>
+            <div id="hero-mid">
+                <div style="width: 186px; height: 124px; position: relative">
+                    <div style="width: 100%; height: 100%; left: 0px; top: 0px; position: absolute; display: flex; align-items: center; justify-content: center;">
+                        <div class="std-ellipse" style="transform: rotate(-20deg); transform-origin: 50%;"></div>
+                        <div class="std-ellipse"></div>
+                    </div>
+                    <div style="position: relative; height: 100%; align-items: center; text-align: center; display: flex; justify-content: center" class="std-text">DISCUSS<br/>THE PROJECT</div>
+                </div>
+                <div style="justify-content: space-between; align-items: center; display: flex; gap: 12px;">
+                    <div class="std-text">WHO WE ARE</div>
+                    <img style="width: 80px;" src="images/arrow.svg" />
+                </div>
+            </div>
+            <div id="hero-bottom">
+                <div class="std-text">WE ARE THE LEADERS IN WEB & MOBILE <br/>DESIGN AND DEVELOPMENT INDUSTRY.</div>
+                <div class="std-text">We create quality content and cool ideas. We create websites, applications,<br/>3D design, motion design and animation. We bring the most daring ideas to life</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'PP Telegraf';
+    src: url('fonts/PPTelegraf/PPTelegraf-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body::before,
+body::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    opacity: 50%;
+}
+
+body::before {
+    background: #ffffff;
+    filter: url(#grainy);
+}
+
+#header {
+    width: 100vw; z-index: 10; height: 75px; left: 0px; top: 0px; position: fixed; justify-content: space-between; align-items: center; display: flex;
+}
+
+#logo {
+    padding-left: 80px; justify-content: space-between; align-items: center; display: flex; gap: 5px;
+}
+
+#navbar {
+    padding-right: 80px; align-self: stretch; justify-content: space-between; align-items: center; display: flex; gap: 60px;
+}
+
+.std-text {
+    text-align: center; color: #101110; font-size: 13px; font-family: "PP Telegraf"; font-weight: 400;  line-height: 20px; letter-spacing: 0.30px; word-wrap: break-word;
+}
+
+.tagline-text {
+    color: #101110; font-size: calc(min(8vw, 110px)); font-family: "PP Telegraf"; font-weight: 400; word-wrap: break-word;
+}
+@media (width < 1288px) {
+    #logo {
+        padding-left: 40px;
+    }
+    #navbar {
+        padding-right: 40px;
+    }
+}
+@media (width < 1024px) {
+    #logo {
+        padding-left: 20px;
+    }
+    #navbar {
+        padding-right: 20px;
+    }
+}
+
+#contact {
+    align-self: stretch; justify-content: flex-start; align-items: center; gap: 18px; display: flex;
+}
+
+#main {
+    width: 100vw; background: #F1F1EA; flex-direction: column; justify-content: flex-start; align-items: center; display: flex;
+}
+
+#hero {
+    align-self: stretch; min-height: calc(100vh - 125px); z-index: 5; padding-top: 95px; padding-bottom: 30px; padding-left: 10vw; padding-right: 10vw; flex-direction: column; justify-content: space-around; align-items: center; display: flex;
+}
+@media (width < 1288px) {
+    #hero {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+@media (width < 1024px) {
+    #hero {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+#hero-banner {
+    width: 100%; justify-content: flex-start; align-items: center; display: flex;
+}
+
+#hero-mid {
+    align-self: stretch; justify-content: space-between; align-items: center; display: flex;
+}
+
+#hero-bottom {
+    align-self: stretch; justify-content: space-between; align-items: center; display: flex;
+}
+@media (width < 860px) {
+    #hero-bottom {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+.std-ellipse {
+    width: 92%; height: 52%; position: absolute; border-radius: 50%; border: 1px #101110 solid;
+}
