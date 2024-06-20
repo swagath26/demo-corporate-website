@@ -10,7 +10,7 @@
 
     <svg height="100vh" width="100vw" style="position: absolute; top: 0">
         <filter id="grainy">
-            <feTurbulence type="fractalNoise" baseFrequency="0.5"/>
+            <feTurbulence type="fractalNoise" baseFrequency="0.4"/>
             <feComposite operator="in" in2="SourceGraphic" result="monoNoise"/>
         </filter>
     </svg>
@@ -28,48 +28,50 @@
             <div id="language" class="std-text">EN</div>
             <div id="contact">
                 <div class="std-text">CONTACT US</div>
-                <img style="width: 10px; position: relative" src="images/contact.svg" />
+                <div id="contact-icon-container" style="width: 10px; height: 10px; display: flex; align-items: end; justify-content: flex-start;">
+                    <img id="contact-icon" style="position: relative" src="images/contact.svg" />
+                </div>
             </div>
-            <img id="menu-icon" style="width: 36px; height: 11px; position: relative" src="images/menu.svg" />
+            <img id="menu-icon" style="width: 36px; height: 11px; cursor: pointer; position: relative" src="images/menu.svg" />
         </div>
     </div>
 
     <div id="main">
-        <div style="width: 100vw; height: 100%; overflow: hidden; position: absolute; top: 0; left: 0;">
-            <div style="width: 50vw; height: 80vh; z-index: 2; right: 0px; top: 0px; position: absolute; transform: rotate(45deg); transform-origin: 36% 60%; filter: blur(0px);
-                background: radial-gradient(22% 23% at 36% 60%, rgba(243, 153, 76, 0.70) 0%, rgba(243, 153, 76, 0.30) 50%, rgba(241, 234, 234, 0) 100%)">
-            </div>
-            <div style="width: 50vw; height: 80vh; z-index: 3; right: 0px; top: 0px; position: absolute; transform: rotate(15deg); transform-origin: 50% 50%; filter: blur(30px);
-                background: radial-gradient(28% 26% at 50% 50%, rgba(228, 47, 47, 0.80) 20%, rgba(241, 234, 234, 0) 100%)">
-            </div>
-            <div style="width: 50vw; height: 80vh; z-index: 1; right: 0px; top: 0px; position: absolute; transform: rotate(45deg); transform-origin: 44% 64%; filter: blur(5px);
-                background: radial-gradient(40% 36% at 44% 64%, rgba(243, 153, 76, 0.70) 0%, rgba(241, 234, 234, 0) 100%)">
-            </div>
-        </div>
         <div id="hero">
-            <div id="hero-banner">
+            <div id="hero-gradient" style="width: 100vw; height: 100vh; overflow: hidden; position: absolute; top: 0; left: 0;">
+                <div id="hero-gradient-1" class="hero-gradient-color" style="z-index: 2; transform: rotate(45deg); transform-origin: 36% 60%; filter: blur(0px);
+                    background: radial-gradient(22% 23% at 36% 60%, rgba(243, 153, 76, 0.70) 0%, rgba(243, 153, 76, 0.30) 50%, rgba(241, 234, 234, 0) 100%)">
+                </div>
+                <div id="hero-gradient-2" class="hero-gradient-color" style="z-index: 3; transform: rotate(15deg); transform-origin: 50% 50%; filter: blur(30px);
+                    background: radial-gradient(28% 26% at 50% 50%, rgba(228, 47, 47, 0.80) 20%, rgba(241, 234, 234, 0) 100%)">
+                </div>
+                <div id="hero-gradient-3" class="hero-gradient-color" style="z-index: 1; transform: rotate(45deg); transform-origin: 44% 64%; filter: blur(5px);
+                    background: radial-gradient(40% 36% at 44% 64%, rgba(243, 153, 76, 0.70) 0%, rgba(241, 234, 234, 0) 100%)">
+                </div>
+            </div>
+            <div id="hero-banner" class="hero-section">
                 <div id="tagline">
                     <div class="tagline-text">WE CREATE</div>
                     <div class="tagline-text" style="margin-left: 16.6vw">BEST DIGITAL</div>
                     <div class="tagline-text" >PRODUCTS.</div>
                 </div>
             </div>
-            <div id="hero-mid">
-                <div style="width: 186px; height: 124px; position: relative">
+            <div id="hero-mid" class="hero-section">
+                <div id="discuss-project-container">
                     <div style="width: 100%; height: 100%; left: 0px; top: 0px; position: absolute; display: flex; align-items: center; justify-content: center;">
-                        <div class="std-ellipse" style="transform: rotate(-20deg); transform-origin: 50%;"></div>
-                        <div class="std-ellipse"></div>
+                        <div id="std-ellipse-1" class="std-ellipse"></div>
+                        <div id="std-ellipse-2" class="std-ellipse"></div>
                     </div>
                     <div style="position: relative; height: 100%; align-items: center; text-align: center; display: flex; justify-content: center" class="std-text">DISCUSS<br/>THE PROJECT</div>
                 </div>
-                <div style="justify-content: space-between; align-items: center; display: flex; gap: 12px;">
+                <div id="about" style="justify-content: space-between; cursor: pointer; align-items: center; display: flex; gap: 12px;">
                     <div class="std-text">WHO WE ARE</div>
-                    <img style="width: 80px;" src="images/arrow.svg" />
+                    <img id="about-arrow" src="images/arrow.svg" />
                 </div>
             </div>
-            <div id="hero-bottom">
+            <div id="hero-bottom" class="hero-section">
                 <div class="std-text">WE ARE THE LEADERS IN WEB & MOBILE <br/>DESIGN AND DEVELOPMENT INDUSTRY.</div>
-                <div class="std-text">We create quality content and cool ideas. We create websites, applications,<br/>3D design, motion design and animation. We bring the most daring ideas to life</div>
+                <div style="max-width: 500px; text-align: left;" class="std-text">We create quality content and cool ideas. We create websites, applications, 3D design, motion design and animation. We bring the most daring ideas to life</div>
             </div>
         </div>
     </div>
